@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+         var n= prompt("enter the string here");
+         var m= prompt("enter the character");
+         var count=0;
+         var x= new Array();
+         x= n.split("");
+         for(let i=0; i<n.length; i++){
+             if(x[i]==m)
+             {
+                 count=count+1;
+             }
+         }
+         alert("There are "+count+" occurences for "+m);
+     </script>
+</body>
+</html>

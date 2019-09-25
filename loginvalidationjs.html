@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+            th{
+                text-align: left;
+            }
+            body{
+                background-color: aqua;
+                font-family:sans-serif;
+                font-size: 15px;
+
+            }
+            h1{
+                font-family: cursive;
+            }
+            input{
+                width: 300px;
+                height: 40px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <table align="center" cellspacing="15" style="margin-left: 500px">
+        <tr>
+            <th>Name </th>
+            <th><input type="text" id="name1" ></th>
+            <th id="name" style="width: 400px"> </th>
+        </tr>
+        <tr>
+            <th>Personal Address </th>
+            <th><input type="text" id="address1"></th>
+            <th id="address"> </th>
+        </tr>
+        <tr>
+            <th>Email Id </th>
+            <th><input type="text" id="email1"></th>
+            <th id="mail"> </th>
+        </tr>
+        <tr>
+            <th>Mobile Number </th>
+            <th><input type="text" id="number1"></th>
+            <th id="number"></th>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <th><input type="text" id="password1"></th>
+            <th id="password"></th>
+        </tr>
+        <tr>
+            <th>Confirm Password</th>
+            <th><input type="text" id="password2"></th>
+            <th id="cpassword"></th>
+        </tr>
+        <tr> 
+            <th>  </th>
+            <th><button onclick="sub()">Submit</button></th>
+            <th>  </th>
+        </tr>
+        </table>
+        <script>
+            var name1=document.getElementById("name1");
+            var address1=document.getElementById("address1");
+            var mail1=document.getElementById("email1");
+            var number1=document.getElementById("number1");
+            var password1=document.getElementById("password1");
+            var cpassword1=document.getElementById("password2");
+            var a,b,c,d,e,f;
+            a=document.getElementById("name");
+            b=document.getElementById("address");
+            c=document.getElementById("mail");
+            d=document.getElementById("number");
+            e=document.getElementById("password");
+            f=document.getElementById("cpassword");
+         function sub(){
+                    if(name1.value=="")
+                        {
+                            a.innerHTML="Enter your name";
+                        }
+                    if(address1.value=="")
+                        {
+                            b.innerHTML="Enter your address";
+                        }
+                    if(mail1.value=="")
+                        {
+                            c.innerHTML="Enter your mail address"
+                        }
+                    if(number1.value=="")
+                        {
+                            d.innerHTML="Enter your Mobile number";
+                        }
+                    if(password1.value=="")
+                        {
+                            e.innerHTML="Enter a valid password";
+                        }
+                    if(cpassword1.value=="")
+                        {
+                            f.innerHTML="Confirm the entered password";
+                        }
+         } 
+        </script>
+    
+</body>
+</html>

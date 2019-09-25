@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		assignment5
+	</title>
+	<style type="text/css">
+			input {
+				color: white;
+				background-color: black;
+
+			}
+			button{
+				
+			}
+	</style>
+</head>
+<body>
+	<input type="text" id="todo" placeholder="Enter todo">
+	<button onclick="add()" >add</button>
+	<ol id="listid">
+
+	</ol>
+	<script type="text/javascript">
+		function add() {
+			const a = document.getElementById('todo').value;
+			if (a.length > 0) {
+				const ol = document.getElementById('listid');
+				const li = document.createElement('li');
+				li.setAttribute('class', 'list-item')
+				li.appendChild(document.createTextNode(a));
+				ol.appendChild(li)
+				document.getElementById('todo').value = '';
+			}
+		}
+
+		document.addEventListener('click',  e => {
+			if (e.target.className == 'list-item') {
+				e.target.remove()
+			}
+		});
+	</script>
+</body>
+</html>

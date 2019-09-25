@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reversing</title>
+	<style type="text/css">
+			input{
+				width: 30%;
+				padding: 10px 10px;
+				text-align: center;
+				margin-left: 30%;
+			} 
+			button{
+				height: 40px;
+			}
+			
+	</style>
+</head>
+<body>
+	<h1 style="font-family: cursive; margin-left: 30%; margin-top: 200px;">Check for Palindrome</h1>
+	<input type="Number" id="input1" name="" placeholder="Number Here">
+	<button onclick="reverse()">Check</button>
+	<script type="text/javascript">
+			
+			function reverse()
+					{
+						var forward = Number(document.getElementById("input1").value);
+						var reverse = 0;
+						const a=forward;
+						while(forward>0)
+						{
+							reverse=reverse*10 + forward%10;
+							forward=parseInt(forward/10);
+						}
+						if(a==reverse)
+							{
+
+							alert('The Entered Number '+a+' is a palindrome');
+							}
+						else{
+							alert('This is not a palindrome');
+						}
+					}
+	</script>
+
+</body>
+</html>

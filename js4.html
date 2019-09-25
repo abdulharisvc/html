@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignmet</title>
+</head>
+<body>
+	<input type="number" id="inputone" name="">
+	<input type="number" id="inputtwo" name="">
+	<button onclick="calc('add')">add</button>
+	<button onclick="calc('mul')">multiply</button>
+	<button onclick="calc('div')">divide</button>
+	<button onclick="calc('sub')">subtract</button>
+<script type="text/javascript">
+	function calc(operation) {
+		const a = document.getElementById('inputone').value;
+		const b = document.getElementById('inputtwo').value;
+		if (operation == 'add') {
+			const sum = Number(a)+Number(b);
+			alert(sum);
+		}
+
+		if (operation == 'mul') {
+			const val = Number(a) * Number(b);
+			alert(val)
+		}
+		if(operation=='div'){
+			const di =Number(a)/Number(b);
+			alert(di)
+		}
+		if(operation=='sub'){
+			const su = Number(a)-Number(b);
+			alert(su)
+		}
+	}
+</script>
+
+
+</body>
+</html>

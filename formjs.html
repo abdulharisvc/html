@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul{
+        list-style: none;
+        background-color: bisque;
+
+    }
+    input{
+        padding: 5px 5px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <th><span id="">First Name : </span></th>
+            <th><input id="first" type="text" placeholder="enter first name"><br></th>
+        </tr>
+        <tr>
+            <th><span id="">Last Name : </span></th>
+            <th><input id="last" type="text" placeholder="enter last name"><br></th>
+       </tr>
+       <tr>
+            <th><span id="">E-mail : </span></th>
+            <th><input id="mail" type="text" placeholder="enter E-mail"><br></th>
+       </tr>
+       <tr>
+            <th><span>Password : </span></th>
+            <th><input type="text" name="" placeholder="enter password" id=""></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>
+                <button onclick="writefunc()" style="padding: 10px; margin-top: 10px"> sign up
+                </button>
+            </th>
+        </tr>
+    </div>
+        <ul id="ul1"></ul>
+        <script>
+            var a,b,c,d,f,e;
+            function writefunc()
+                    {
+                        
+                         a = document.getElementById("first").value;
+                         b = document.getElementById("last").value;
+                         c = document.getElementById("mail").value;
+
+                         d=document.getElementById("ul1");
+                         f= document.createElement("li");
+                        d.append(f);
+                        f.innerHTML="I'm "+a+" "+b+" . My e-mail id is "+c;
+                    }
+        </script>
+    
+</body>
+</html>

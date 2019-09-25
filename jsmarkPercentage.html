@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pass percentage</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = new Array();
+		var sum=0;
+		for(var i=0; i<5; i++)
+			{
+				a[i]=Number(prompt('enter the marks'));
+				sum=sum+a[i];
+			}
+		var percentage=(sum/500)*100;
+		document.write("percentage of marks "+percentage);
+		setTimeout( ()=>{
+			if(percentage<60)
+				{
+					alert("The student has failed")
+				}
+			else
+				{
+				alert("The student has passed")
+				}},1500
+				)
+
+	</script>
+
+</body>
+</html>

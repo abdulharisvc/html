@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <script>
+            function GEEKFORGEEKS(){
+    
+                var name=document.forms["RegForm"]["Name"];
+                var address,mail,password,phone,subject;
+                address =document.forms["RegForm"]["Address"];
+                mail=document.forms["RegForm"]["Email"];
+                password=document.forms["RegForm"]["Password"];
+                phone=document.forms["RegForm"]["Phone"]
+                subject=document.forms["RegForm"]["Subject"];
+                if(name.value=="")
+                    {window.alert("please enter your name");
+                    name.focus();
+                    return false;
+                    }
+                if(address.value=="")
+                    {
+                        window.alert("please enter address");
+                        address.focus();
+                        return false;
+                    }
+                if (mail.value=="")
+                    {
+                        window.alert("please enter a valid mail");
+                        mail.focus();
+                        return false;
+                    }
+                if(mail.value.indexOf("@",0)<0)
+                    {
+                        window.alert("please enter a valid mail");
+                        mail.focus();
+                        return false;
+                    }
+                if(mail.value.indexOf(".",0)<0)
+                    {
+                        window.alert("please enter a valid mail");
+                        mail.focus();
+                        return false;
+                    }
+                if(phone.value=="")
+                    {
+                        window.alert("please enter your phone");
+                        phone.focus()
+                        return false;
+                    }
+                if(subject.selectedIndex<1)
+                    {
+                        alert("please enter your course");
+                        subject.focus();
+                        return false;
+                    }
+                if(password.value=="")
+                    {
+                        window.alert("please enter your passwords");
+                        password.focus();
+                        return false;
+                    }
+                return true;
+            }
+        </script>
+</head>
+<body>
+    <form name="RegForm" onsubmit="return GEEKFORGEEKS()" action="submit.php" method="post"> 
+        <h1>Registration form</h1><br>
+        <p>enter name  : <input type="text" name="Name"> </p><br>
+        <p>Enter Address : <input type="text" name="Address"></p><br>
+        <p>E-mail address : <input type=" text" name="Email"></p><br>
+        <p>Password : <input type="text" name="Password" id=""></p><br>
+        <p>Telephone : <input type="text" name="Phone"></p><br>
+        <p>
+            select your course
+            <select name="Subject" id="">
+                <option value="btech">Btech</option>
+                <option value="bba">BBA</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">Bsc</option>
+                <option value="geeksfrgeeks">GeekforGeeks</option>
+                <option value="bpharm">Bpharm</option>
+            </select>
+        </p><br><br>
+            <p>Comments: <textarea name="Comments" id="" cols="55" rows="10"></textarea></p>
+            <p><input type="submit" value="send" name="Submit"></p>
+        
+    </form>
+   
+</body>
+</html>

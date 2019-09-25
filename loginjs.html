@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Username : <input type="text" id="username1"> Password : <input type="text" id="password1"><br></p>
+    <button onclick="login()">LOGIN</button>
+    <script>
+        var a = document.getElementById("username1");
+        var b = document.getElementById("password1");
+        function login(){
+                            if(a.value=="admin" && b.value=="admin123")
+                                {
+                                    document.write("Login Successful");
+                                }
+                            else{
+                                document.write("Login unsuccessful");
+                            }
+                        }   
+            
+    </script>
+    
+</body>
+</html>

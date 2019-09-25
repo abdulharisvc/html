@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var b;
+    var n=Number(prompt("enter the month"));
+    var m=Number(prompt("enter the year"));
+    if(n==2 && (m%4==0 && (m%100!=0 || m%400==0))){
+        document.write("February "+m+" has 29 days");
+    }
+    else if (n==2 && m%4!=0){ 
+        document.write("February "+m+" has 28 days");
+    }
+    else {
+            switch(n){
+                case 1:document.write("January "+m+" has 31 days")
+                    break;
+                case 3:document.write("March "+m+" has 31 days")
+                    break;
+                case 4:document.write("April "+m+" has 30 days")
+                    break;
+                case 5:document.write("May "+m+" has 31 days")
+                    break;
+                case 6:document.write("June "+m+" has 30 days")
+                    break;
+                case 7:document.write("July "+m+" has 31 days")
+                    break;
+                case 8:document.write("August "+m+" has 31 days")
+                    break;
+                case 9:document.write("September "+m+" has 30 days")
+                    break;
+                case 10:document.write("October "+m+" has 31 days")
+                    break;
+                case 11:document.write("November "+m+" has 30 days")
+                    break;
+                case 12:document.write("December "+m+" has 31 days")
+                    break;
+            }
+        }
+    </script>
+    
+</body>
+</html>

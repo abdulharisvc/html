@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a= new Array();
+    var temp;
+    for (let i=0; i<10; i++)
+        {
+            a[i]=Number(prompt("enter the array elements"));
+        }
+     for(let j=0; j<10; j++){
+             for(let i=0; i<10; i++)
+                 {
+                    if(a[i]<a[i+1])
+                    {
+                        temp= a[i];
+                        a[i]=a[i+1];
+                        a[i+1]=temp;
+                    }
+                }
+        }
+        document.write(a[1]);
+    </script>
+    
+</body>
+</html>

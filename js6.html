@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reversing</title>
+</head>
+<body>
+	<input type="Number" id="input1" name="">
+	<button onclick="reverse()">Reverse</button>
+	<script type="text/javascript">
+			
+			function reverse()
+					{
+						var forward = Number(document.getElementById("input1").value);
+						var reverse = 0;
+						while(forward>0)
+						{
+							reverse=reverse*10 + forward%10;
+							forward=parseInt(forward/10);
+						}
+						alert(reverse);
+					}
+	</script>
+
+</body>
+</html>

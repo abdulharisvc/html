@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>highestmaarkjs</title>
+</head>
+<body>
+		<script type="text/javascript">
+				var a= new Array();
+				var b= new Array();
+				var mark1=0;
+				var mark2=0;
+				var dif;
+				for (var i=0; i<3; i++)
+				{
+
+					a[i] = Number(prompt("enter the mark of Arun"));
+					mark1 = mark1 + a[i];
+				}
+				for(var j=0; j<3; j++)
+					{
+						b[j]=Number(prompt("enter the mark of Midhun"));
+						mark2 = mark2+b[j];
+					}
+				setTimeout( ()=>{
+				if(mark2>mark1){
+					dif=mark2-mark1;
+					alert("Midhun has got "+dif+" marks more than Arun");
+
+				}
+				else{
+					dif=mark1- mark2;
+					alert("Arun has got "+dif+" marks more than Midhun"); 
+				}
+					},2000
+				)
+
+				document.write("marks for Arun is : "+a[0]+", "+a[1]+", "+a[2]+"<br>");
+				document.write("Total : "+mark1+"<br><br>");
+
+				document.write("marks of Midhun is : "+b[0]+", "+b[1]+", "+b[2]+"<br>");
+				document.write("Total is : "+mark2);
+		</script>
+
+</body>
+</html>
